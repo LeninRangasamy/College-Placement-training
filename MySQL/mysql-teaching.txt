@@ -1,55 +1,54 @@
 SQL- structured query language
 Types of technology:
-1.MongoDB
-2.SQL
-3.MySQL
-*MySQL is an open source Relational database management system
-*it stores data in tables or rows and columns
+    1.MongoDB
+    2.SQL
+    3.MySQL
+        *MySQL is an open source Relational database management system
+        *it stores data in tables or rows and columns
 intro to mySQL workbenck is a tool for mysql server
-create db- CREATE SCHEMA 'database-name'
-sql is not case sensitive
-show db-show databases;
-show tables-show tables;
+    create db- CREATE SCHEMA 'database-name'
+    -sql is not case sensitive
+show databases - show databases;
+show tables in out database - show tables;
 Tasks:
-1.create new connection 
-2.inside connection create new schema/database
-3.create new two table for that schema
-4.table 1 Name: student information
-5.table 2 Name: student mark information
-6.table 1 column 1:reg no(PK,NN, Datatype:varchar)
-7.table 1 column2:student name(PK,NN, Datatype:varchar)
-8.table 1 column 3:email(NN,dt:varchar)
-9.table 1 column 4:ph no(NN,dt:int)
-10.table 2 col 1:reg num(PK,NN,dt:varchar)
-11.table 2 col 2:sub 1 same as sub 2, sub 3
+    1.create new connection 
+    2.inside connection create new schema/database
+    3.create new two table for that schema
+    4.table 1 Name: student information
+    5.table 2 Name: student mark information
+    6.table 1 column 1:reg no(PK,NN, Datatype:varchar)
+    7.table 1 column2:student name(PK,NN, Datatype:varchar)
+    8.table 1 column 3:email(NN,dt:varchar)
+    9.table 1 column 4:ph no(NN,dt:int)
+    10.table 2 col 1:reg num(PK,NN,dt:varchar)
+    11.table 2 col 2:sub 1 same as sub 2, sub 3
 
 SEP 13 class 
 keys in mysql:
-1. primary key(PK)
-2. forigen key(FK)
-3.unique key
-4.comparison key
+    1. primary key(PK)
+    2. forigen key(FK)
+    3.unique key
+    4.comparison key
 
-1.PK:
--unique &not null
--identifies each row
-2. forien key:
--refers to primary keyof a another table
--creates relationship bw tables
+1.PK(Primary Key):
+    -unique &not null
+    -identifies each row
+2. forgien key:
+    -refers to primary keyof a another table
+    -creates relationship bw tables
 
 To create a table:
-create table table_name(
+    create table table_name(
     Column_name data_type key_type,
     Column_name data_type key_type
-);
+    );
 Example:
-create table product(
+  create table product(
   product_id int primary key,
   product_name varchar(50) not null,
   product_qty int not null,
   product_price int not null
-
-);
+  );
 Key words:
     1.CREATE-create new DB/table
     2.ALTER-modify table
@@ -61,7 +60,7 @@ Key words:
 To insert data:
    insert into table_name(column name)
    values (equal column value);
- Example:
+Example:
      insert into product (product_id,product_name,product_qty,product_price)
     values 
     (1001,"laptop",50,20000),
