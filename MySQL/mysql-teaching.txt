@@ -87,6 +87,19 @@ To delete particular:
     DROP FROM students; - this will remove all rows but keep the structure (similar effect to TRUNCATE)
     EX:
        delete from product; -deletes all the contents in the table (table would not delete,contents only delete)
+       
+Aggregate function:
+    COUNT - how many
+    SUM - total
+    AVG - average
+    MIN/MAX - smallest/largest
+syntax:
+    SELECT max(reg_no) FROM student;
+where clause:
+    -used to filtering
+syntax:
+    select col_name from table_name where condition;
+    select amount from orders where amount>=500;
     
 
 
