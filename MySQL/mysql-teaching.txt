@@ -51,29 +51,44 @@ create table product(
 
 );
 Key words:
-1.CREATE-create new DB/table
-2.ALTER-modify table
-3.DROP-delete table/DB
-4.INSERT-add data
-5.UPDATE-modify data
-6.DELETE-remove data
-7.SELECT-fetch data
+    1.CREATE-create new DB/table
+    2.ALTER-modify table
+    3.DROP-delete table/DB
+    4.INSERT-add data
+    5.UPDATE-modify data
+    6.DELETE-remove data
+    7.SELECT-fetch data
 To insert data:
    insert into table_name(column name)
    values (equal column value);
  Example:
- insert into product (product_id,product_name,product_qty,product_price)
-values 
-(1001,"laptop",50,20000),
-(1002,"watch",100,1000),
-(1003,"lipstick",1,1),
-(1004,"mobile",50,2000);
+     insert into product (product_id,product_name,product_qty,product_price)
+    values 
+    (1001,"laptop",50,20000),
+    (1002,"watch",100,1000),
+    (1003,"lipstick",1,1),
+    (1004,"mobile",50,2000);
 
 To update data:
-   update table_name set column_name where(condition)
+    update table_name set column_name where(condition)
 Example:
-update product set product_price=600 where product_id=1004;
+    update product set product_price=600 where product_id=1004;
 
+To view data(result):
+    SELECT column_name FROM table_name;
+EX:
+    1.select product_name from product; -to view particular columns
+    2.select product_name,product_name from product; - to view multiple columns
+    3.select * from product; - to view all columns in our table
+
+
+To delete:
+    DROP TABLE students; - to delete whole table
+To delete particular:
+    DROP FROM students; - this will remove all rows but keep the structure (similar effect to TRUNCATE)
+    EX:
+       delete from product; -deletes all the contents in the table (table would not delete,contents only delete)
+    
 
 
 
