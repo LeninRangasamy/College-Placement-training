@@ -93,13 +93,16 @@ Aggregate function:
     SUM - total
     AVG - average
     MIN/MAX - smallest/largest
-syntax:
+  syntax:
     SELECT max(reg_no) FROM student;
 where clause:
-    -used to filtering
-syntax:
+    -used to filtering data
+  syntax:
     select col_name from table_name where condition;
-    select amount from orders where amount>=500;
+    EX : select amount from orders where amount>=500;
+  for use two condtions:
+   select col_name from table_name where condition1 and/or/not condition2
+   select first_name from customers where country="USA" or country="UK";
     
 
 
