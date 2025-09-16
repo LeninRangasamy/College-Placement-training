@@ -1,0 +1,27 @@
+public static void main(String[] args) {
+
+		boolean bool=true;
+
+		boolean bool1=false;
+
+		char ch='1';
+
+		char ch1='A';
+
+		byte num=-128;   //1 byte ---> 8 bit
+
+		short num1=256;   //2 byte ---> 16 bit
+
+		int num2=32564;   //4byte ----> 32 bit
+
+		long num3=999999999l;  //8byte ----> 64bit
+
+		System.out.println((int)Math.pow(2,15));
+
+		System.out.println((int)Math.pow(2,31));
+
+		float fl=23.25f;
+
+		double d=25.26;
+
+	}
